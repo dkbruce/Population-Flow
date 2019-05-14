@@ -1,5 +1,6 @@
 # Population Flow
 ### Carlos Cocuy, Rebeca Rodriguez, Mirella Mardakis, Dylan Bruce, Margaret Sippio
+#### May 2019, UCF Data Analytics Boot Camp
 
 ##### In a globalized world where international communication and ease of travel have become commonplace, migration plays a huge role in shaping human activity. We want to narrow the scope to intra-state immigration within the United States, and show the pattern of immigration and emigration between states over the periods of 2015, 2016, and 2017. Our data defines migration as relocating to a different state within the past year.  
 

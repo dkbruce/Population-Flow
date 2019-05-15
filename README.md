@@ -4,7 +4,7 @@
 
 ### May 2019, UCF Data Analytics Boot Camp
 
-In a globalized world where international communication and ease of travel have become commonplace, migration plays a huge role in shaping human activity. We want to narrow the scope to intra-state immigration within the United States, and show the pattern of immigration and emigration between states over the periods of 2015, 2016, and 2017. News stories indicate that Florida, Texas, and California are the most popular states, respectively, for new residents. We want to analyze whether this holds up over the past few years and if this trend has changed. Our data defines migration as relocating to a different state within the past year.  
+In a globalized world where international communication and ease of travel have become commonplace, migration plays a huge role in shaping human activity. We want to narrow the scope to inter-state immigration within the United States, and show the pattern of immigration and emigration between states over the periods of 2015, 2016, and 2017. News stories indicate that Florida, Texas, and California are the most popular states, respectively, for new residents. We want to analyze whether this holds up over the past few years and if this trend has changed. Our data defines migration as relocating to a different state within the past year.  
 
 We will be using Python to read our CSV file with Census Bureau data into a SQL database. With Python Flask, we will build a webpage using the Spatial SanKey JavaScript library to illustrate the migration patterns.
 

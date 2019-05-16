@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>US State-to-State Migration</title>
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+<style>
+body {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  margin: 0px;
+  font-family: sans-serif;
+}
+#map {
+  top:0px;
+  left:0px;
+  right:0px;
+  height: 100%;
+}
+path {
+  fill: none;
+  stroke: #4682B4;
+  stroke-opacity: 0.6;
+  stroke-linecap: round;
+  cursor: pointer;
+}
+path:hover {
+  stroke-opacity: 0.8;
+  stroke: #315B7E;
+}
+.curvesettings {
+  position: absolute;
+  right: 10px;
+  top:6px;
+}
+.box {
+  border: 1px solid #EEE;
+  margin: 3px;
+  padding: 5px;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.title {
+  font-weight: 600;
+}
+.source {
+  position: absolute;
+  width: 50%;
+  top: 6px;
+  left: 50px;
+}
+</style>
+
+<body>
+  <div id="map"></div>
+
+  <div class="source box">
+    <div class="title">State to State Migrations</div>
+    This graph shows how many citizens migrate to each state (circle) from another state (line) within the United States. The <a href="https://www.census.gov/data/tables/time-series/demo/geographic-mobility/state-to-state-migration.html">datasource</a> is the Census Data from the United States Government.
+  </div>
+</body>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="http://rawgit.com/geodesign/spatialsankey/master/spatialsankey.js"></script>
+<script type="text/javascript" src="static/js/logic.js">
+</script>

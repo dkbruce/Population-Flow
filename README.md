@@ -8,4 +8,4 @@ In a globalized world where international communication and ease of travel have 
 
 We will be using Python to read our CSV file with Census Bureau data into a SQL database. With Python Flask, we will build a webpage using the Spatial SanKey JavaScript library to illustrate the migration patterns.
 
-#### Sources: <br>https://www.census.gov/data/tables/time-series/demo/geographic-mobility/state-to-state-migration.html, State-to-State Migration Flows: 2017, 2016, 2015<br>https://www.usnews.com/news/best-states/slideshows/here-are-the-states-where-people-are-moving<br>State Latitude and Longitude: https://inkplant.com/code/state-latitudes-longitudes
+###### Sources: <br>https://www.census.gov/data/tables/time-series/demo/geographic-mobility/state-to-state-migration.html, State-to-State Migration Flows: 2017, 2016, 2015<br>https://www.usnews.com/news/best-states/slideshows/here-are-the-states-where-people-are-moving<br>State Latitude and Longitude: https://inkplant.com/code/state-latitudes-longitudes

@@ -1,6 +1,6 @@
 # Population Flow
 
-## Carlos Cocuy, Rebeca Rodriguez, Mirella Mardakis, Dylan Bruce, Margaret Sippio
+## Carlos Cocuy, Rebeca Rodriguez, Mirella Mardakis, Dylan Bruce, Margaret Oluwatoyin Sippio
 
 ### May 2019, UCF Data Analytics Boot Camp
 

@@ -1,8 +1,8 @@
 import csv
-with open('../website/data/StateLongLat.csv') as csv_file:
+with open('../website/static/data/StateLongLat.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
-    f= open("../website/data/states.geojson","w+")
+    f= open("../website/static/data/states.geojson","w+")
     f.write('{')
     f.write('"type": "FeatureCollection",')
     f.write('"features": [')

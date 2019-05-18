@@ -60,7 +60,7 @@ def year(year):
     num_states = len(states)
     for index, state in enumerate(states):
         output[state] = dict(zip(target[int(index * length / num_states) : int((index + 1) * length / num_states)],
-                                flow[int(index * length / num_states) : int((index + 1) * length / num_states)] ))
+                                 flow[int(index * length / num_states) : int((index + 1) * length / num_states)] ))
     return jsonify(output)
 
 @app.route("/api/v1/<string:state>/<int:year>")

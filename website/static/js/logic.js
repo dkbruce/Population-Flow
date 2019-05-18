@@ -23,7 +23,7 @@ var svg = d3.select("#map").select("svg"),
 
 // Load data asynchronosuly
 function graphs(csv){
-d3.json("../../data/states.geojson", function(nodes) {
+d3.json("static/data/states.geojson", function(nodes) {
   console.log(nodes);
   d3.csv(csv, function(links) {
     console.log(links);
@@ -104,4 +104,4 @@ d3.selectAll("input").on("click", function(){
 });
 }
 
-graphs("../../data/2015.csv");
+graphs("static/data/2015.csv");

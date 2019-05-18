@@ -13,7 +13,7 @@ path = os.path.join('sqlite:///', 'website', f'{database}')
 
 engine = create_engine(path)
 
-data = os.path.join('website', 'data', 'aggregate.csv')
+data = os.path.join('website', 'static', 'data', 'aggregate.csv')
 df = pd.read_csv(data)
 
 df.to_sql(name='Flow', con=engine, if_exists='replace', index=False)

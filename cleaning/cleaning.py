@@ -8,7 +8,7 @@ final_df = pd.DataFrame(data={'target': [], 'source': [], 'flow': [], 'year': []
 
 for year in years:
     file_path = base_file + year + '.csv'
-    data_path = os.path.join('..', 'website', 'data', file_path)
+    data_path = os.path.join('..', 'website', 'static', 'data', file_path)
 
     year_df = pd.read_csv(data_path)
     target = []
@@ -31,5 +31,5 @@ for year in years:
     final_df = final_df.append(temp)
 
 final_df['flow'] = final_df['flow'].map(int)
-output_path = os.path.join('..', 'website', 'data', 'aggregate.csv')
+output_path = os.path.join('..', 'website', 'static', 'data', 'aggregate.csv')
 final_df.sort_values('year').to_csv(output_path, index=False)

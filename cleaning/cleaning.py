@@ -3,11 +3,12 @@ import pandas as pd
 
 years = ['2015', '2016', '2017']
 base_file = 'state-to-state_migration_'
-output_file = [os.path.join('..', 'data', base_file + year + '_fixed.csv') for year in years]
 
-for (year, path) in zip(years, output_file):
+final_df = pd.DataFrame(data={'target': [], 'source': [], 'flow': [], 'year': []})
+
+for year in years:
     file_path = base_file + year + '.csv'
-    data_path = os.path.join('..', 'data', file_path)
+    data_path = os.path.join('..', 'website', 'data', file_path)
 
     year_df = pd.read_csv(data_path)
     target = []
@@ -23,5 +24,12 @@ for (year, path) in zip(years, output_file):
                     source.append(states[j])
                     target.append(states[i])
                     flow.append(int(temp.replace(',', '')))
+
+    year_list = [year]*(len(target))
                         
-    pd.DataFrame(data={'target': target, 'source': source, 'flow': flow}).dropna().to_csv(path, index=False)
+    temp = pd.DataFrame(data={'target': target, 'source': source, 'flow': flow, 'year': year_list}).dropna()
+    final_df = final_df.append(temp)
+
+final_df['flow'] = final_df['flow'].map(int)
+output_path = os.path.join('..', 'website', 'data', 'aggregate.csv')
+final_df.sort_values('year').to_csv(output_path, index=False)

@@ -1,7 +1,7 @@
 // Set leaflet map
 var flipped = "";
 var year = "2015";
-var url = "data/2015.csv";
+var url = "static/data/2015.csv";
 
 var map = new L.map('map', {
           center: new L.LatLng(45,-110.58),
@@ -52,7 +52,7 @@ var svg = d3.select("#map").select("svg"),
 
 // Load data asynchronosuly
 
-  d3.json("data/states.geojson", function(nodes) {
+  d3.json("static/data/states.geojson", function(nodes) {
 
     d3.csv(data, function(links) {
 
@@ -144,7 +144,7 @@ d3.selectAll("input").on("click", function(){
   options[this.name] = parseFloat(this.value);
 });
 // initialize the map with 2015
-var initialdata = "data/2015.csv";
+var initialdata = "static/data/2015.csv";
 updatedata(initialdata);
 
 d3.selectAll('div.year')
@@ -154,7 +154,7 @@ d3.selectAll('div.year')
   .select("select").node().value;
   year = selected
   //construct url
-  url = "data/"+String(year)+flipped  + ".csv"
+  url = "static/data/"+String(year)+flipped  + ".csv"
   //remove existing data
   removedata();
   //load in updates data
@@ -174,7 +174,7 @@ d3.selectAll('div.flipped')
     flipped = ""
   }
   //construct url
-  url = "data/"+String(year)+flipped  + ".csv"
+  url = "static/data/"+String(year)+flipped  + ".csv"
   //remove existing data
   removedata();
   //load in updates data

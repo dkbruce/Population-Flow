@@ -95,7 +95,7 @@ var svg = d3.select("#map").select("svg"),
           return (this === circleUnderMouse) ? 0.7 : 0;
       });
       circs.append("svg:title")
-        .text(totalflow);
+        .text(totalflow + " people");
     console.log(circs[0][0]);
     };
 

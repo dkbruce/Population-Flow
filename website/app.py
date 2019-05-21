@@ -31,7 +31,7 @@ def routes():
                                '/api/v1/<int:year>',
                                '/api/v1/<string:state>/<int:year>']})
 
-@app.route("/api/v1/<string:state>")
+@app.route("/api/v1/<string:state>/")
 def state(state):
     results = db.session.query(Flow.target, Flow.flow, Flow.year).filter(Flow.source.like(state))
     target = [result[0] for result in results]
@@ -47,7 +47,7 @@ def state(state):
                                 flow[int(index * length / num_year) : int((index + 1) * length / num_year)] ))
     return jsonify(output)
 
-@app.route("/api/v1/<int:year>")
+@app.route("/api/v1/<int:year>/")
 def year(year):
     results = db.session.query(Flow.target, Flow.source, Flow.flow).filter(Flow.year == year).order_by(Flow.source).order_by(Flow.target)
     target = [result[0] for result in results]
@@ -63,7 +63,7 @@ def year(year):
                                  flow[int(index * length / num_states) : int((index + 1) * length / num_states)] ))
     return jsonify(output)
 
-@app.route("/api/v1/<string:state>/<int:year>")
+@app.route("/api/v1/<string:state>/<int:year>/")
 def state_year(state, year):
     results = db.session.query(Flow.target, Flow.flow, Flow.year).filter(Flow.source.like(state)).filter(Flow.year == year)
     target = [result[0] for result in results]

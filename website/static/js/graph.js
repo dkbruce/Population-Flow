@@ -13,8 +13,8 @@ function newPlot(state) {
             datum.year = +datum.year;
           });
 
-        state_immi = immi_data.filter(datum => datum.target == state);
-        state_emi = emi_data.filter(datum => datum.source == state);
+        state_immi = immi_data.filter(datum => datum.target.trim() == state.trim());
+        state_emi = emi_data.filter(datum => datum.source.trim() == state.trim());
 
         var immi_trace = {
             x: state_immi.map(datum => datum.year),
@@ -36,6 +36,17 @@ function newPlot(state) {
         var layout = {
             title: {
                 text: title
+            },
+            xaxis: {
+                tickformat: 'd',
+                title: {
+                    text: "Year"
+                }
+            },
+            yaxis: {
+                title: {
+                    text: "Number of People"
+                }
             }
         };
 
@@ -61,8 +72,8 @@ function updatePlot(state) {
               datum.year = +datum.year;
             });
   
-          state_immi = immi_data.filter(datum => datum.target == state);
-          state_emi = emi_data.filter(datum => datum.source == state);
+          state_immi = immi_data.filter(datum => datum.target.trim() == state.trim());
+          state_emi = emi_data.filter(datum => datum.source.trim() == state.trim());
   
           var immi_trace = {
               x: state_immi.map(datum => datum.year),

@@ -9,7 +9,7 @@
 { "type": "Feature", "id": "Colorado", "properties": { "LAT": 39.059811, "LON":-105.311104 }, "geometry": { "type": "Point", "coordinates": [ -105.311104, 39.059811 ] } },
 { "type": "Feature", "id": "Connecticut", "properties": { "LAT": 41.597782, "LON":-72.755371 }, "geometry": { "type": "Point", "coordinates": [ -72.755371, 41.597782 ] } },
 { "type": "Feature", "id": "Delaware", "properties": { "LAT": 39.318523, "LON":-75.507141 }, "geometry": { "type": "Point", "coordinates": [ -75.507141, 39.318523 ] } },
-{ "type": "Feature", "id": "District of Columbia", "properties": { "LAT": 38.897438, "LON":-77.026817 }, "geometry": { "type": "Point", "coordinates": [ -77.026817, 38.897438 ] } },
+{ "type": "Feature", "id": "District of Columbia ", "properties": { "LAT": 38.897438, "LON":-77.026817 }, "geometry": { "type": "Point", "coordinates": [ -77.026817, 38.897438 ] } },
 { "type": "Feature", "id": "Florida", "properties": { "LAT": 27.766279, "LON":-81.686783 }, "geometry": { "type": "Point", "coordinates": [ -81.686783, 27.766279 ] } },
 { "type": "Feature", "id": "Georgia", "properties": { "LAT": 33.040619, "LON":-83.643074 }, "geometry": { "type": "Point", "coordinates": [ -83.643074, 33.040619 ] } },
 { "type": "Feature", "id": "Hawaii", "properties": { "LAT": 21.094318, "LON":-157.498337 }, "geometry": { "type": "Point", "coordinates": [ -157.498337, 21.094318 ] } },

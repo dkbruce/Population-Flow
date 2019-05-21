@@ -23,71 +23,89 @@
 </head>
 <main>
     {% extends "template.html" %}
-    
+
     {% block content %}
         <div class='container'>
-            <div class='row'>
-                <div class='colmd-12'>
-                    <div class="dropdown">
-                        <select onchange="updatePlot(this.value)">
-                            <option>Alabama</option>
-                            <option>Alaska</option>
-                            <option>Arizona</option>
-                            <option>Arkansas</option>
-                            <option>California</option>
-                            <option>Colorado</option>
-                            <option>Connecticut</option>
-                            <option>Delaware</option>
-                            <option>District Of Columbia </option>
-                            <option>Florida</option>
-                            <option>Georgia</option>
-                            <option>Hawaii</option>
-                            <option>Idaho</option>
-                            <option>Illinois</option>
-                            <option>Indiana</option>
-                            <option>Iowa</option>
-                            <option>Kansas</option>
-                            <option>Kentucky</option>
-                            <option>Louisiana</option>
-                            <option>Maine</option>
-                            <option>Maryland</option>
-                            <option>Massachusetts</option>
-                            <option>Michigan</option>
-                            <option>Minnesota</option>
-                            <option>Mississippi</option>
-                            <option>Missouri</option>
-                            <option>Montana</option>
-                            <option>Nebraska</option>
-                            <option>Nevada</option>
-                            <option>New Hampshire</option>
-                            <option>New Jersey</option>
-                            <option>New Mexico</option>
-                            <option>New York</option>
-                            <option>North Carolina</option>
-                            <option>North Dakota</option>
-                            <option>Ohio</option>
-                            <option>Oklahoma</option>
-                            <option>Oregon</option>
-                            <option>Pennsylvania</option>
-                            <option>Rhode Island</option>
-                            <option>South Carolina</option>
-                            <option>South Dakota</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Utah</option>
-                            <option>Vermont</option>
-                            <option>Virginia</option>
-                            <option>Washington</option>
-                            <option>West Virginia</option>
-                            <option>Wisconsin</option>
-                            <option>Wyoming</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+            <div class="dropdown">
+                <select onchange="updatePlot(this.value)">
+                    <option>Alabama</option>
+                    <option>Alaska</option>
+                    <option>Arizona</option>
+                    <option>Arkansas</option>
+                    <option>California</option>
+                    <option>Colorado</option>
+                    <option>Connecticut</option>
+                    <option>Delaware</option>
+                    <option>District Of Columbia </option>
+                    <option>Florida</option>
+                    <option>Georgia</option>
+                    <option>Hawaii</option>
+                    <option>Idaho</option>
+                    <option>Illinois</option>
+                    <option>Indiana</option>
+                    <option>Iowa</option>
+                    <option>Kansas</option>
+                    <option>Kentucky</option>
+                    <option>Louisiana</option>
+                    <option>Maine</option>
+                    <option>Maryland</option>
+                    <option>Massachusetts</option>
+                    <option>Michigan</option>
+                    <option>Minnesota</option>
+                    <option>Mississippi</option>
+                    <option>Missouri</option>
+                    <option>Montana</option>
+                    <option>Nebraska</option>
+                    <option>Nevada</option>
+                    <option>New Hampshire</option>
+                    <option>New Jersey</option>
+                    <option>New Mexico</option>
+                    <option>New York</option>
+                    <option>North Carolina</option>
+                    <option>North Dakota</option>
+                    <option>Ohio</option>
+                    <option>Oklahoma</option>
+                    <option>Oregon</option>
+                    <option>Pennsylvania</option>
+                    <option>Rhode Island</option>
+                    <option>South Carolina</option>
+                    <option>South Dakota</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Utah</option>
+                    <option>Vermont</option>
+                    <option>Virginia</option>
+                    <option>Washington</option>
+                    <option>West Virginia</option>
+                    <option>Wisconsin</option>
+                    <option>Wyoming</option>
+                </select>
 
             <div id="graph"></div>
 
+            <div class='row'>
+                <div class='col-md-6'>
+                        <h3>Instructions on Using the Population Flow Map</h3>
+      
+                      </div>
+                      <div class='col-md-6'>
+                        <h3>Info</h3>
+      
+                      </div>
+                  </div>
+                  <div class='row'>
+                      <div class='col-md-6'>
+                        <p>
+                          The map utilizes a spatial sankey to show a flow of people from state to state. The visual of migration will show when you hover over a state's circle. The amount of people migrating will also show up under your cursor.
+                        </p>
+                        <p>
+                          There are two (2) dropdowns. One that allow you to change the year of the data, and another to change the direction. The years of our data only includes 2015, 2016, and 2017. The direction can be migration into each state or migration out of each state.
+                        </p>
+                      </div>
+                      <div class='col-md-6'>
+                        Difficulty on insensible reasonable in. From as went he they. Preference themselves me as thoroughly partiality considered on in estimating. Middletons acceptance discovered projecting so is so or. In or attachment inquietude remarkably comparison at an. Is surrounded prosperous stimulated am me discretion expression. But truth being state can she china widow. Occasional preference fat remarkably now projecting uncommonly dissimilar. Sentiments projection particular companions interested do at my delightful. Listening newspaper in advantage frankness to concluded unwilling.
+      ain forbade picture now prevent carried she get see sitting. Up twenty limits as months. Inhabit so perhaps of in to certain. Sex excuse chatty was seemed warmth. Nay add far few immediate sweetness earnestly dejection.
+            
         </div>
     {% endblock %}
     </main>

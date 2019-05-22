@@ -28,6 +28,7 @@ for year in years:
     year_list = [year]*(len(target))
                         
     temp = pd.DataFrame(data={'target': target, 'source': source, 'flow': flow, 'year': year_list}).dropna()
+    temp.to_csv(os.path.join('..', 'website', 'static', 'data', year + '.csv'), index=False)
     final_df = final_df.append(temp)
 
 final_df['flow'] = final_df['flow'].map(int)

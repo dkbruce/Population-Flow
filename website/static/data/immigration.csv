@@ -1,154 +1,358 @@
 target,year,flow
+Alabama,2011,117726
+Alabama,2012,104600
+Alabama,2013,104102
+Alabama,2014,107919
 Alabama,2015,114876
 Alabama,2016,122220
 Alabama,2017,111803
+Alaska,2011,35084
+Alaska,2012,33415
+Alaska,2013,34360
+Alaska,2014,37842
 Alaska,2015,34696
 Alaska,2016,31300
 Alaska,2017,30199
+Arizona,2011,222877
+Arizona,2012,232457
+Arizona,2013,236146
+Arizona,2014,249730
 Arizona,2015,253281
 Arizona,2016,273257
 Arizona,2017,261727
+Arkansas,2011,69845
+Arkansas,2012,76948
+Arkansas,2013,70621
+Arkansas,2014,74741
 Arkansas,2015,81594
 Arkansas,2016,71083
 Arkansas,2017,79411
+California,2011,468428
+California,2012,493641
+California,2013,485477
+California,2014,513968
 California,2015,514477
 California,2016,514758
 California,2017,523131
+Colorado,2011,202124
+Colorado,2012,205060
+Colorado,2013,206543
+Colorado,2014,218728
 Colorado,2015,227445
 Colorado,2016,223260
 Colorado,2017,226933
+Connecticut,2011,71502
+Connecticut,2012,80311
+Connecticut,2013,88351
+Connecticut,2014,82746
 Connecticut,2015,76997
 Connecticut,2016,75586
 Connecticut,2017,83325
+Delaware,2011,33912
+Delaware,2012,34757
+Delaware,2013,36790
+Delaware,2014,32166
 Delaware,2015,44495
 Delaware,2016,33400
 Delaware,2017,38532
+District of Columbia ,2011,48066
+District of Columbia ,2012,53830
+District of Columbia ,2013,46571
+District of Columbia ,2014,56234
 District of Columbia ,2015,59905
 District of Columbia ,2016,58154
 District of Columbia ,2017,56231
+Florida,2011,498597
+Florida,2012,537148
+Florida,2013,529406
+Florida,2014,546501
 Florida,2015,584938
 Florida,2016,605018
 Florida,2017,566476
+Georgia,2011,271077
+Georgia,2012,277466
+Georgia,2013,278972
+Georgia,2014,274095
 Georgia,2015,283325
 Georgia,2016,305040
 Georgia,2017,278889
+Hawaii,2011,57542
+Hawaii,2012,55145
+Hawaii,2013,58083
+Hawaii,2014,58144
 Hawaii,2015,53742
 Hawaii,2016,57229
 Hawaii,2017,46457
+Idaho,2011,60336
+Idaho,2012,59283
+Idaho,2013,61592
+Idaho,2014,64633
 Idaho,2015,73809
 Idaho,2016,71556
 Idaho,2017,71899
+Illinois,2011,216204
+Illinois,2012,208755
+Illinois,2013,223605
+Illinois,2014,209536
 Illinois,2015,209828
 Illinois,2016,203713
 Illinois,2017,195092
+Indiana,2011,127874
+Indiana,2012,134137
+Indiana,2013,133508
+Indiana,2014,139846
 Indiana,2015,147529
 Indiana,2016,145782
 Indiana,2017,142290
+Iowa,2011,70405
+Iowa,2012,75760
+Iowa,2013,75650
+Iowa,2014,79194
 Iowa,2015,85937
 Iowa,2016,78263
 Iowa,2017,77072
+Kansas,2011,83640
+Kansas,2012,88284
+Kansas,2013,89735
+Kansas,2014,96467
 Kansas,2015,91340
 Kansas,2016,88830
 Kansas,2017,86154
+Kentucky,2011,110031
+Kentucky,2012,112787
+Kentucky,2013,103207
+Kentucky,2014,104975
 Kentucky,2015,106918
 Kentucky,2016,113238
 Kentucky,2017,103985
+Louisiana,2011,99138
+Louisiana,2012,91215
+Louisiana,2013,91889
+Louisiana,2014,97814
 Louisiana,2015,93321
 Louisiana,2016,85371
 Louisiana,2017,72836
+Maine,2011,33818
+Maine,2012,27523
+Maine,2013,36780
+Maine,2014,39065
 Maine,2015,30123
 Maine,2016,38590
 Maine,2017,34252
+Maryland,2011,153979
+Maryland,2012,154983
+Maryland,2013,161525
+Maryland,2014,156787
 Maryland,2015,168894
 Maryland,2016,158647
 Maryland,2017,165654
+Massachusetts,2011,139830
+Massachusetts,2012,142577
+Massachusetts,2013,135150
+Massachusetts,2014,146622
 Massachusetts,2015,132642
 Massachusetts,2016,149408
 Massachusetts,2017,146299
+Michigan,2011,139158
+Michigan,2012,133981
+Michigan,2013,144091
+Michigan,2014,149991
 Michigan,2015,142639
 Michigan,2016,155874
 Michigan,2017,148787
+Minnesota,2011,101029
+Minnesota,2012,101042
+Minnesota,2013,104825
+Minnesota,2014,106783
 Minnesota,2015,108476
 Minnesota,2016,111307
 Minnesota,2017,115623
+Mississippi,2011,68511
+Mississippi,2012,73500
+Mississippi,2013,68588
+Mississippi,2014,73927
 Mississippi,2015,69351
 Mississippi,2016,64639
 Mississippi,2017,73549
+Missouri,2011,149439
+Missouri,2012,162930
+Missouri,2013,159936
+Missouri,2014,153320
 Missouri,2015,159152
 Missouri,2016,162809
 Missouri,2017,162439
+Montana,2011,33553
+Montana,2012,37690
+Montana,2013,40035
+Montana,2014,37561
 Montana,2015,42760
 Montana,2016,37775
 Montana,2017,35456
+Nebraska,2011,52070
+Nebraska,2012,43266
+Nebraska,2013,45854
+Nebraska,2014,52200
 Nebraska,2015,52950
 Nebraska,2016,51448
 Nebraska,2017,52507
+Nevada,2011,110345
+Nevada,2012,124285
+Nevada,2013,126583
+Nevada,2014,130390
 Nevada,2015,135999
 Nevada,2016,117899
 Nevada,2017,133074
+New Hampshire,2011,37000
+New Hampshire,2012,50484
+New Hampshire,2013,44867
+New Hampshire,2014,41393
 New Hampshire,2015,53446
 New Hampshire,2016,52457
 New Hampshire,2017,52893
+New Jersey,2011,140194
+New Jersey,2012,130223
+New Jersey,2013,136907
+New Jersey,2014,128911
 New Jersey,2015,144074
 New Jersey,2016,144359
 New Jersey,2017,152106
+New Mexico,2011,62130
+New Mexico,2012,54693
+New Mexico,2013,56808
+New Mexico,2014,68917
 New Mexico,2015,55753
 New Mexico,2016,64802
 New Mexico,2017,57255
+New York,2011,282209
+New York,2012,270053
+New York,2013,272066
+New York,2014,258571
 New York,2015,257611
 New York,2016,260723
 New York,2017,285252
+North Carolina,2011,265291
+North Carolina,2012,273149
+North Carolina,2013,275922
+North Carolina,2014,286533
 North Carolina,2015,310612
 North Carolina,2016,330896
 North Carolina,2017,313834
+North Dakota,2011,32510
+North Dakota,2012,38213
+North Dakota,2013,38908
+North Dakota,2014,39059
 North Dakota,2015,42618
 North Dakota,2016,29655
 North Dakota,2017,37315
+Ohio,2011,191778
+Ohio,2012,196391
+Ohio,2013,185749
+Ohio,2014,196742
 Ohio,2015,203475
 Ohio,2016,195396
 Ohio,2017,198929
+Oklahoma,2011,108878
+Oklahoma,2012,108972
+Oklahoma,2013,109255
+Oklahoma,2014,111346
 Oklahoma,2015,110878
 Oklahoma,2016,102000
 Oklahoma,2017,101961
+Oregon,2011,127906
+Oregon,2012,118925
+Oregon,2013,143841
+Oregon,2014,137008
 Oregon,2015,141162
 Oregon,2016,139334
 Oregon,2017,149513
+Pennsylvania,2011,234291
+Pennsylvania,2012,215500
+Pennsylvania,2013,224280
+Pennsylvania,2014,232889
 Pennsylvania,2015,232683
 Pennsylvania,2016,252060
 Pennsylvania,2017,250120
+Rhode Island,2011,26769
+Rhode Island,2012,33446
+Rhode Island,2013,34108
+Rhode Island,2014,32621
 Rhode Island,2015,38344
 Rhode Island,2016,32800
 Rhode Island,2017,36850
+South Carolina,2011,157644
+South Carolina,2012,156705
+South Carolina,2013,166047
+South Carolina,2014,171969
 South Carolina,2015,170366
 South Carolina,2016,165230
 South Carolina,2017,166573
+South Dakota,2011,27506
+South Dakota,2012,26051
+South Dakota,2013,30042
+South Dakota,2014,28198
 South Dakota,2015,26962
 South Dakota,2016,31789
 South Dakota,2017,26106
+Tennessee,2011,170969
+Tennessee,2012,177098
+Tennessee,2013,186525
+Tennessee,2014,182130
 Tennessee,2015,195923
 Tennessee,2016,170867
 Tennessee,2017,191909
+Texas,2011,514726
+Texas,2012,507752
+Texas,2013,548034
+Texas,2014,538572
 Texas,2015,553032
 Texas,2016,531996
 Texas,2017,524511
+Utah,2011,85217
+Utah,2012,87870
+Utah,2013,97869
+Utah,2014,90234
 Utah,2015,97361
 Utah,2016,107083
 Utah,2017,99584
+Vermont,2011,20463
+Vermont,2012,24431
+Vermont,2013,23180
+Vermont,2014,22635
 Vermont,2015,21232
 Vermont,2016,21262
 Vermont,2017,21868
+Virginia,2011,257130
+Virginia,2012,250653
+Virginia,2013,266348
+Virginia,2014,262477
 Virginia,2015,277715
 Virginia,2016,264164
 Virginia,2017,250490
+Washington,2011,208507
+Washington,2012,215494
+Washington,2013,208215
+Washington,2014,220259
 Washington,2015,230907
 Washington,2016,257728
 Washington,2017,260787
+West Virginia,2011,50068
+West Virginia,2012,47125
+West Virginia,2013,51957
+West Virginia,2014,47957
 West Virginia,2015,42078
 West Virginia,2016,47196
 West Virginia,2017,40007
+Wisconsin,2011,109439
+Wisconsin,2012,99192
+Wisconsin,2013,100846
+Wisconsin,2014,117831
 Wisconsin,2015,106511
 Wisconsin,2016,118814
 Wisconsin,2017,112519
+Wyoming,2011,30651
+Wyoming,2012,31149
+Wyoming,2013,27584
+Wyoming,2014,25992
 Wyoming,2015,35947
 Wyoming,2016,26471
 Wyoming,2017,18511

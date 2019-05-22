@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-years = ['2015', '2016', '2017']
+years = ['2011', '2012', '2013', '2014', '2015', '2016', '2017']
 base_file = 'state-to-state_migration_'
 
 final_df = pd.DataFrame(data={'target': [], 'source': [], 'flow': [], 'year': []})

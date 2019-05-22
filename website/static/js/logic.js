@@ -23,7 +23,7 @@ map._initPathRoot()
 var legend = L.control({position: 'topright'});
 legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'year');
-    div.innerHTML = '<select><option>2015</option><option>2016</option><option>2017</option></select>';
+    div.innerHTML = '<select><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option></select>';
     div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
     return div;
 };
@@ -95,7 +95,8 @@ var svg = d3.select("#map").select("svg"),
           return (this === circleUnderMouse) ? 0.7 : 0;
       });
       circs.append("svg:title")
-        .text(totalflow + " people");
+        .text(totalflow);
+    console.log(circs[0][0]);
     };
 
     var mouseout = function(d) {

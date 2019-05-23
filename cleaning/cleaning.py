@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-years = ['2011', '2012', '2013', '2014', '2015', '2016', '2017']
+years = ['2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017']
 base_file = 'state-to-state_migration_'
 
 final_df = pd.DataFrame(data={'target': [], 'source': [], 'flow': [], 'year': []})
@@ -21,9 +21,10 @@ for year in years:
             temp = year_df.iloc[i].iloc[j]
             if isinstance(temp, str):
                 if(states[j] != 'Total'):
-                    source.append(states[j])
-                    target.append(states[i])
-                    flow.append(int(temp.replace(',', '')))
+                    if i != j:
+                        source.append(states[j])
+                        target.append(states[i])
+                        flow.append(int(temp.replace(',', '')))
 
     year_list = [year]*(len(target))
                         

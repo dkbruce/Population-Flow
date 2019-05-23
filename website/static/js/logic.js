@@ -1,7 +1,7 @@
 // Set leaflet map
 var flipped = "";
-var year = "2015";
-var url = "static/data/2015.csv";
+var year = "2011";
+var url = "static/data/2011.csv";
 
 var map = new L.map('map', {
           center: new L.LatLng(45,-110.58),
@@ -45,6 +45,7 @@ var removedata = function() {
 }
 
 var updatedata = function(data) {
+  console.log(data);
 // Setup svg element to work with
 var svg = d3.select("#map").select("svg"),
     linklayer = svg.append("g"),
@@ -96,7 +97,6 @@ var svg = d3.select("#map").select("svg"),
       });
       circs.append("svg:title")
         .text(totalflow);
-    console.log(circs[0][0]);
     };
 
     var mouseout = function(d) {
@@ -144,7 +144,7 @@ d3.selectAll("input").on("click", function(){
   options[this.name] = parseFloat(this.value);
 });
 // initialize the map with 2015
-var initialdata = "static/data/2015.csv";
+var initialdata = "static/data/2011.csv";
 updatedata(initialdata);
 
 d3.selectAll('div.year')

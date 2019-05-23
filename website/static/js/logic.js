@@ -1,7 +1,7 @@
 // Set leaflet map
 var flipped = "";
-var year = "2011";
-var url = "static/data/2011.csv";
+var year = "2005";
+var url = "static/data/2005.csv";
 
 var map = new L.map('map', {
           center: new L.LatLng(45,-110.58),
@@ -23,7 +23,7 @@ map._initPathRoot()
 var legend = L.control({position: 'topright'});
 legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'year');
-    div.innerHTML = '<select><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option></select>';
+    div.innerHTML = '<select><option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option><option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option></select>';
     div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
     return div;
 };
@@ -144,7 +144,7 @@ d3.selectAll("input").on("click", function(){
   options[this.name] = parseFloat(this.value);
 });
 // initialize the map with 2015
-var initialdata = "static/data/2011.csv";
+var initialdata = "static/data/2005.csv";
 updatedata(initialdata);
 
 d3.selectAll('div.year')

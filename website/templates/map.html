@@ -3,6 +3,7 @@
 <title>US State-to-State Migration</title>
 
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
 
 <style>
 body {
@@ -53,19 +54,20 @@ path:hover {
 }
 </style>
 
-<body>
+<body id="page-top">
+
   <div id="map"></div>
 
   <div class="source box">
     <div class="title">State to State Migrations</div>
-    This graph shows how many citizens migrate to each state (circle) from another state (line) within the United States.
-    The <a href="https://www.census.gov/data/tables/time-series/demo/geographic-mobility/state-to-state-migration.html">datasource</a> is the
-    Census Data from the United States Government. Click on the dropdowns on the right to have different views based on year and migration direction!
+    This graph shows how many citizens migrate to each state (circle) from another state (line) within the United States. The <a href="https://www.census.gov/data/tables/time-series/demo/geographic-mobility/state-to-state-migration.html">datasource</a> is the Census Data from the United States Government.
   </div>
+
+
 </body>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <script src="http://rawgit.com/geodesign/spatialsankey/master/spatialsankey.js"></script>
-<script type="text/javascript" src="static/js/logic.js">
+<script type="text/javascript" src="{{ url_for('static', filename='js/logic.js') }}"></script>
 </script>

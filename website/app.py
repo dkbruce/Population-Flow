@@ -22,7 +22,11 @@ def apidoc():
 
 @app.route("/map")
 def map():
-    return render_template('map.html') 
+    return render_template('map.html')
+
+@app.route("/plots")
+def plots():
+    return render_template('plots.html')
 
 @app.route("/api/v1/")
 def routes():

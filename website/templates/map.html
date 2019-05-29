@@ -3,7 +3,7 @@
 <title>US State-to-State Migration</title>
 
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
 
 <style>
 body {
@@ -62,13 +62,16 @@ path:hover {
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item-api">
-                  <a class="nav-link-api js-scroll-trigger" href="index.html">Home</a> 
+                  <a class="nav-link-api js-scroll-trigger" href="{{ url_for('home') }}">Home</a> 
                 </li>
                 <li class="nav-item-api">
-                  <a class="nav-link-api js-scroll-trigger" href="map.html">Map</a>
+                  <a class="nav-link-api js-scroll-trigger" href="{{ url_for('plots') }}">Plots</a>
                 </li>
                 <li class="nav-item-api">
-                  <a class="nav-link-api js-scroll-trigger" href="apidoc.html">API Doc</a>
+                  <a class="nav-link-api js-scroll-trigger" href="{{ url_for('map') }}">Map</a>
+                </li>
+                <li class="nav-item-api">
+                  <a class="nav-link-api js-scroll-trigger" href="{{ url_for('apidoc') }}">API Doc</a>
                 </li>
                 <li class="nav-item-api">
                   <a class="nav-link-api js-scroll-trigger" href="https://github.com/dkbruce/Population-Flow">GitHub</a>
@@ -77,7 +80,6 @@ path:hover {
             </div>
           </div>
         </nav>
-
 
   <div id="map"></div>
 
@@ -90,8 +92,4 @@ path:hover {
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <script src="http://rawgit.com/geodesign/spatialsankey/master/spatialsankey.js"></script>
-<script type="text/javascript" src="website/static/js/logic.js"></script>
-
-
-
-</script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/logic.js') }}"></script>

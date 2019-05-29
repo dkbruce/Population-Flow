@@ -7,21 +7,45 @@
   <meta name="author" content="">
   <title>Population Flow</title>
   <!-- Bootstrap core CSS -->
-  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
   <!-- Custom fonts for this template -->
   <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="{{ url_for('static', filename='css/grayscale.min.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+
 </head>
 <body id="page-top">
   <!-- Navigation -->
-
-  {% extends "template.html" %}
-
-  {% block content %}
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="{{ url_for('home') }}">Home</a> 
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="{{ url_for('plots') }}">Plots</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="{{ url_for('map') }}">Map</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="{{ url_for('apidoc') }}">API Doc</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="https://github.com/dkbruce/Population-Flow">GitHub</a>
+                </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   <!-- Header -->
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
@@ -119,8 +143,8 @@
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Completed by: <br>Carlos <br>
-          Dylan<br> Mirella <br> Rebeca <br> Margaret </h2>
+          <h2 class="text-white mb-5">Completed by: <br>Carlos Cocuy<br>
+          Dylan Bruce<br> Mirella Mardakis<br> Rebeca Rodriguez<br> Margaret Oluwatoyin Sippio</h2>
         <!--  <form class="form-inline d-flex">
             <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
             <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
@@ -128,8 +152,6 @@
         </div>
       </div>
     </div>
-
-    {% endblock %}
   </section>
 
   <!-- Footer -->

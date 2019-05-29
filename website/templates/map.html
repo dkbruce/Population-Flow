@@ -3,7 +3,7 @@
 <title>US State-to-State Migration</title>
 
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-<link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 <style>
 body {
@@ -12,6 +12,7 @@ body {
   height: 100%;
   margin: 0px;
   font-family: sans-serif;
+  margin-top: 50px;
 }
 #map {
   top:0px;
@@ -55,6 +56,28 @@ path:hover {
 </style>
 
 <body id="page-top">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-api navbar-expand-lg navbar-light fixed-top" id="mainNav">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item-api">
+                  <a class="nav-link-api js-scroll-trigger" href="index.html">Home</a> 
+                </li>
+                <li class="nav-item-api">
+                  <a class="nav-link-api js-scroll-trigger" href="map.html">Map</a>
+                </li>
+                <li class="nav-item-api">
+                  <a class="nav-link-api js-scroll-trigger" href="apidoc.html">API Doc</a>
+                </li>
+                <li class="nav-item-api">
+                  <a class="nav-link-api js-scroll-trigger" href="https://github.com/dkbruce/Population-Flow">GitHub</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
 
   <div id="map"></div>
 
@@ -62,12 +85,13 @@ path:hover {
     <div class="title">State to State Migrations</div>
     This graph shows how many citizens migrate to each state (circle) from another state (line) within the United States. The <a href="https://www.census.gov/data/tables/time-series/demo/geographic-mobility/state-to-state-migration.html">datasource</a> is the Census Data from the United States Government.
   </div>
-
-
 </body>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <script src="http://rawgit.com/geodesign/spatialsankey/master/spatialsankey.js"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/logic.js') }}"></script>
+<script type="text/javascript" src="website/static/js/logic.js"></script>
+
+
+
 </script>
